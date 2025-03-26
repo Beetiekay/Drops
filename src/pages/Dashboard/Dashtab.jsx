@@ -28,7 +28,7 @@ const Dashtab = () => {
       <Tabs>
       {/* Tab Headeer */}
       <div className='flex justify-center py-4 relative z-50'>
-       <TabList className=" w-40 flex gap-1 justify-between shadow-md relative lg:top-2 md:top-2 -top-16 dark:bg-opacity-30 dark:bg-Darksky rounded-2xl ">
+       <TabList className=" w-40 flex gap-1 justify-between shadow-md relative lg:top-2 md:top-2 -top-24 dark:bg-opacity-30 dark:bg-Darksky rounded-2xl ">
         <Tab className='p-3 flex justify-center outline-none w-20 hover:rounded-2xl hover:text-whitesmoke  dark:text-gray rounded-2xl hover:bg-Darkblue opacity-'><GiNetworkBars size={25} /></Tab>
         <Tab className='p-3 flex justify-center hover:text-whitesmoke outline-none w-20 rounded-2xl dark:text-gray hover:bg-Darkblue '><FaRegCreditCard size={25} /></Tab>
       </TabList>
