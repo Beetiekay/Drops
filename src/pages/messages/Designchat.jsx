@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 
 const Designchat = () => {
   return (
-    <div className='p-2 h-[100vh] overflow-hidden dark:bg-black'>
+    <div className='p-2 h-[100vh]  dark:bg-black'>
         {/* Header */}
         <div className='flex justify-between items-center sticky'>
          <div className='dark:text-orange text-gray lg:hidden md:hidden flex'><Link to={"/Chats"}><FaChevronLeft size={22}/></Link></div> 
@@ -33,7 +33,7 @@ const Designchat = () => {
         {/* Header */}
          
          {/* content */}
-        <div className='lg:h-[78vh] md:h-[78vh] h-[83.9vh] overflow-y-auto'>
+        <div className='lg:h-[78vh] md:h-[78vh] h-[82vh] overflow-y-auto'>
 
           <div className='flex gap-4 mt-4 mb-4'>
             <div className='flex items-end'><button className='text-black mb-2 bg-black dark:text-whitesmoke dark:bg-opacity-25 dark:bg-Darksky bg-opacity-25 p-2 shadow-md rounded-full'><FaUser size={20}/></button></div>
@@ -121,8 +121,8 @@ const Designchat = () => {
          {/* content */}
 
         {/* Typing */}
-        <div>
-            <form action='' className='flex items-center fixed w-full left-0  bg-whitesmoke p-2 dark:bg-black dark:border dark:border-orange rounded-2xl shadow-md'>
+        <div className='fixed w-full left-0 '>
+            <form action='' className='flex items-center  bg-whitesmoke p-2 dark:bg-black dark:border dark:border-orange rounded-2xl shadow-md'>
               <IoAttachOutline size={35} className='text-gray dark:text-orange'/>
               <input type='text' placeholder='Your Message' className='w-full outline-none bg-whitesmoke dark:bg-black p-2'/>
               <div className='flex gap-4'>
