@@ -9,7 +9,7 @@ const Designchat = () => {
   return (
     <div className='p-2 h-[100vh]  dark:bg-black'>
         {/* Header */}
-        <div className='flex justify-between items-center sticky'>
+        <div className='flex justify-between fixed top-0 w-full dark:bg-black items-center'>
          <div className='dark:text-orange text-gray lg:hidden md:hidden flex'><Link to={"/Chats"}><FaChevronLeft size={22}/></Link></div> 
             <div >
                 <h1 className='lg:text-3xl md:text-3xl text-2xl opacity-85 font-semibold dark:text-orange'>Design Chat</h1>
@@ -34,7 +34,7 @@ const Designchat = () => {
          
          {/* content */}
         <div className='lg:h-[78vh] md:h-[78vh] h-[82vh] overflow-y-auto'>
-
+           <div className='w-full h-24'></div>
           <div className='flex gap-4 mt-4 mb-4'>
             <div className='flex items-end'><button className='text-black mb-2 bg-black dark:text-whitesmoke dark:bg-opacity-25 dark:bg-Darksky bg-opacity-25 p-2 shadow-md rounded-full'><FaUser size={20}/></button></div>
             <div className='lg:w-[50%] md:w-[50%] w-[70%] bg-black bg-opacity-10 p-3 rounded-2xl dark:bg-opacity-25 dark:bg-Darksky'>
