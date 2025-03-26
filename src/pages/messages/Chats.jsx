@@ -38,7 +38,7 @@ const Chats = () => {
       {/* Tab Navlinks */}
 
       {/* pageloader */}
-      <div className='z-0'><Pageloader/></div>
+      <div className='fixed top-0 w-full h-full z-50'><Pageloader/></div>
       {/* pageloader */}
 
       <div className='lg:hidden md:hidden block p-2 sticky'><Header/></div> 

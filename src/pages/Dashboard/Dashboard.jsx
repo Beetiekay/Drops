@@ -246,7 +246,7 @@ const Dashboard = () => {
          
 
          {/* pageloader */}
-         <div className='z-0'><Pageloader/></div>
+         <div className='fixed top-0 w-full h-full z-50'><Pageloader/></div>
          {/* pageloader */}
 
 

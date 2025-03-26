@@ -9,7 +9,7 @@ const Designchat = () => {
   return (
     <div className='p-2 h-[100vh]  dark:bg-black'>
         {/* Header */}
-        <div className='flex justify-between fixed top-0 w-full dark:bg-black items-center'>
+        <div className='flex justify-between py-2 bg-whitesmoke fixed top-0 w-full dark:bg-black items-center'>
          <div className='dark:text-orange text-gray lg:hidden md:hidden flex'><Link to={"/Chats"}><FaChevronLeft size={22}/></Link></div> 
             <div >
                 <h1 className='lg:text-3xl md:text-3xl text-2xl opacity-85 font-semibold dark:text-orange'>Design Chat</h1>
