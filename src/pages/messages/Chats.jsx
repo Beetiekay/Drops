@@ -41,12 +41,12 @@ const Chats = () => {
       <div className='fixed top-0 w-full h-full z-50'><Pageloader/></div>
       {/* pageloader */}
 
-      <div className='lg:hidden md:hidden block p-2 sticky'><Header/></div> 
+      <div className='lg:hidden md:hidden relative block p-2 z-50'><Header/></div> 
 
       <div className='w-full h-fit overflow-hidden lg:p-2 md:p-2 p-0 lg:ml-0 md:ml-0 ml-4'>
-    <div className='w-full h-full flex '>
+       <div className='w-full h-full relative z-50 flex'>
        <div data-aos="slide-up" className='lg:w-[30%] md:w-[40%] h-full'><Users/></div>
-       <div className='lg:w-[65%] lg:flex md:flex hidden md:w-[60%] h-full'><Designchat/></div>
+       <div className='lg:w-[65%] lg:flex md:flex hidden md:w-[60%] w-full h-full'><Designchat/></div>
        <div className='w-[25%] h-full lg:flex md:hidden hidden'><Groups/></div>
      </div>
      </div>
