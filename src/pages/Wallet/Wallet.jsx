@@ -260,7 +260,7 @@ const Wallet = () => {
 
 
         {/* For mobile phone */}
-        <div className='lg:hidden mt-2 md:hidden flex'>
+        <div className=' fixed bottom-0 w-full left-0 z-50'>
           <Bottons/>
         </div>
         {/* For mobile phone */}

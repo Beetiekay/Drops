@@ -19,7 +19,7 @@ const Reports = () => {
   return (
     <div className='w-[100%] dark:bg-black lg:flex md:flex block'>
          <Sidebar/>
-        <div className='w-full lg:h-fit md:h-fit md:w-fit h-[86.8vh] overflow-hidden p-2'>
+        <div className='w-full h-fit overflow-hidden p-2'>
           {/* Header */}
             <Header/>
            {/* Header */}
@@ -108,8 +108,8 @@ const Reports = () => {
               
            </div>
         </div>
-            <div className='p-2 lg:hidden mt-2 md:hidden flex'>
-                <Bottons/>
+            <div className=' fixed bottom-0 w-full left-0 z-50'>
+             <Bottons/>
             </div>
       </div>
   )

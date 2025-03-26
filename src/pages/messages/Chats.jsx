@@ -19,7 +19,7 @@ const Chats = () => {
     AOS.init({duration:1200})
  })
   return (
-    <div className='w-[100%] h-full dark:bg-black lg:flex md:flex block'>
+    <div className='w-[100%] h-[100vh] dark:bg-black lg:flex md:flex block overflow-hidden'>
      <Sidebar/>
      {/* Tab Navlinks */}
      <div className='absolute top-8 left-[35rem] lg:hidden md:block hidden z-10'>
@@ -41,16 +41,17 @@ const Chats = () => {
       <div className='z-0'><Pageloader/></div>
       {/* pageloader */}
 
-      <div className='lg:hidden md:hidden block p-2'><Header/></div> 
+      <div className='lg:hidden md:hidden block p-2 sticky'><Header/></div> 
 
-      <div className='w-full lg:h-[100vh] md:h-full h-[76.5vh] overflow-hidden lg:p-2 md:p-2 p-0 lg:ml-0 md:ml-0 ml-4'>
+      <div className='w-full h-fit overflow-hidden lg:p-2 md:p-2 p-0 lg:ml-0 md:ml-0 ml-4'>
     <div className='w-full h-full flex '>
        <div data-aos="slide-up" className='lg:w-[30%] md:w-[40%] h-full'><Users/></div>
        <div className='lg:w-[65%] lg:flex md:flex hidden md:w-[60%] h-full'><Designchat/></div>
        <div className='w-[25%] h-full lg:flex md:hidden hidden'><Groups/></div>
      </div>
      </div>
-   <div className='lg:hidden mt-2 md:hidden block p-2'>
+
+    <div className='fixed bottom-0 w-full left-0 z-50'>
         <Bottons/>
     </div>
 </div>

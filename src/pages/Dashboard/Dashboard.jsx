@@ -38,7 +38,7 @@ const Dashboard = () => {
          {/* Header */}
          <div className='lg:h-[88.9vh] md:h-[88.9vh] h-[89.6vh] flex justify-around'>
         {/* First */}
-         <div className='lg:w-[70%] lg:block md:block hidden md:w-full overflow-y-scroll p-3'>
+         <div className='lg:w-[70%] lg:block relative md:block hidden md:w-full overflow-y-scroll p-3'>
           <div className='grid grid-cols-3 gap-5 mb-5'>
            <button className='p-5 shadow-md outline-none dark:shadow-Darkblue dark:shadow-md dark:hover:bg-Darkblue dark:text-whitesmoke hover:bg-orange hover:text-whitesmoke flex items-center gap-6 rounded-lg'>
             <FaChartArea size={30} className='scale-150'/>
@@ -147,7 +147,7 @@ const Dashboard = () => {
             <input type='checkbox' className='w-12 z-10 peer transition-all h-8 absolute opacity-0 cursor-pointer'/>
             <div className='peer-checked:scale-x-110 duration-300 transition-transform'><MdDashboard size={40} className='dark:text-gray dark:bg-opacity-40'/></div>
 
-              <div className='w-52 mt-2 h-0 peer-checked:h-fit overflow-hidden'>
+             <div className='w-52 mt-2 h-0 peer-checked:h-fit overflow-hidden'>
               <ul className='bg-black border-2 border-orange text-gray p-2 rounded-lg transition-transform duration-500'>
              <Link to={"/dashboard"} className='dark:text-whitesmoke font-semibold text-xl'><li>Dashboard</li></Link>
              <Link to={"/reports"} className='dark:text-whitesmoke font-semibold text-xl'><li>Statistic</li></Link>
@@ -332,7 +332,7 @@ const Dashboard = () => {
           <div className='w-full lg:hidden md:hidden flex  items-end'>
            <div className='w-full'>
             <Dashtab/>
-            <div className=' -mt-3 relative z-50'><Bottons/></div>
+            <div className=' fixed bottom-0 w-full left-0 z-50'><Bottons/></div>
             </div>
          </div>
          {/* Responsiveness */}

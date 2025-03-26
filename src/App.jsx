@@ -14,7 +14,6 @@ import Wallet from './pages/Wallet/Wallet'
 
 export default function App() {
   return (
-    <div className='flex'>
       <BrowserRouter>
        <Routes>
        <Route path="/" element={<Register/>}/>
@@ -33,6 +32,5 @@ export default function App() {
         <Route path="/help" element={<Help/>}/>
        </Routes>
       </BrowserRouter>
-    </div>
   )
 }

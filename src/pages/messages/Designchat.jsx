@@ -9,7 +9,7 @@ const Designchat = () => {
   return (
     <div className='p-2 dark:bg-black'>
         {/* Header */}
-        <div className='flex justify-between items-center'>
+        <div className='flex justify-between items-center sticky'>
          <div className='dark:text-orange text-gray lg:hidden md:hidden flex'><Link to={"/Chats"}><FaChevronLeft size={22}/></Link></div> 
             <div >
                 <h1 className='lg:text-3xl md:text-3xl text-2xl opacity-85 font-semibold dark:text-orange'>Design Chat</h1>
@@ -33,7 +33,7 @@ const Designchat = () => {
         {/* Header */}
          
          {/* content */}
-        <div className='lg:h-[78vh] md:h-[78vh] h-[83.1vh] overflow-y-auto'>
+        <div className='lg:h-[78vh] md:h-[78vh] h-[83.9vh] overflow-y-auto'>
 
           <div className='flex gap-4 mt-4 mb-4'>
             <div className='flex items-end'><button className='text-black mb-2 bg-black dark:text-whitesmoke dark:bg-opacity-25 dark:bg-Darksky bg-opacity-25 p-2 shadow-md rounded-full'><FaUser size={20}/></button></div>
@@ -122,7 +122,7 @@ const Designchat = () => {
 
         {/* Typing */}
         <div>
-            <form action='' className='flex items-center bg-whitesmoke p-2 dark:bg-black dark:border dark:border-orange rounded-2xl shadow-md'>
+            <form action='' className='flex items-center fixed w-full left-0  bg-whitesmoke p-2 dark:bg-black dark:border dark:border-orange rounded-2xl shadow-md'>
               <IoAttachOutline size={35} className='text-gray dark:text-orange'/>
               <input type='text' placeholder='Your Message' className='w-full outline-none bg-whitesmoke dark:bg-black p-2'/>
               <div className='flex gap-4'>
