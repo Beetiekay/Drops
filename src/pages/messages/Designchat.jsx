@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 
 const Designchat = () => {
   return (
-    <div className='p-2 dark:bg-black'>
+    <div className='p-2 h-[100vh] overflow-hidden dark:bg-black'>
         {/* Header */}
         <div className='flex justify-between items-center sticky'>
          <div className='dark:text-orange text-gray lg:hidden md:hidden flex'><Link to={"/Chats"}><FaChevronLeft size={22}/></Link></div> 
