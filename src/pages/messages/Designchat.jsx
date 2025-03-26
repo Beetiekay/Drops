@@ -121,7 +121,7 @@ const Designchat = () => {
          {/* content */}
 
         {/* Typing */}
-        <div className='fixed w-full left-0 '>
+        <div className='fixed bottom-0 w-full left-0 '>
             <form action='' className='flex items-center  bg-whitesmoke p-2 dark:bg-black dark:border dark:border-orange rounded-2xl shadow-md'>
               <IoAttachOutline size={35} className='text-gray dark:text-orange'/>
               <input type='text' placeholder='Your Message' className='w-full outline-none bg-whitesmoke dark:bg-black p-2'/>
