@@ -34,7 +34,7 @@ const Dashboard = () => {
       <Sidebar/>
        <div className='w-full lg:h-[100vh] md:h-[100vh] h-fit p-2'>
         {/* Header */}
-             <Header/>
+        <div className='lg:hidden md:hidden relative p-2 z-50'><Header/></div> 
          {/* Header */}
          <div className='lg:h-[88.9vh] md:h-[88.9vh] h-[89.6vh] flex justify-around'>
         {/* First */}

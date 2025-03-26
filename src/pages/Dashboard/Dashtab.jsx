@@ -24,7 +24,7 @@ const Dashtab = () => {
  });
 
   return (
-    <div className='relative -top-[0.6rem] h-[78.6vh] w-full'>
+    <div className='relative z-50 -top-[0.6rem] h-[78.6vh] w-full'>
       <Tabs>
       {/* Tab Headeer */}
       <div className='flex justify-center py-4 relative z-50'>
@@ -211,6 +211,7 @@ const Dashtab = () => {
                 </div>
                 </div>
               </div>
+              <div className='w-full h-8'></div>
             </div>
            </TabPanel>
          </div>
